@@ -1,7 +1,7 @@
 import "@testing-library/jest-dom";
 import { render, screen } from "@testing-library/react";
 
-import Links from "../components/Links";
+import Links from "../components/Links.js";
 
 test("renders the h3 with the text 'Links'", () => {
   render(<Links />);
@@ -19,3 +19,5 @@ test("displays the URL of a Linkedin link passed down as a prop", () => {
     screen.queryByText("https://www.linkedin.com/in/liza/")
   ).toBeInTheDocument();
 });
+
+
